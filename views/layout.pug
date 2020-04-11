@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    .flex-bar
+      .logo
+        img(src="/images/logo2.png" alt="Logo")
+      .navbar
+        ul
+          li
+            a(href="/") Home
+          li
+             a(href='/contact') Contact
+          li
+            a(href='/aboutus') About Us
+          li
+            a(href='/services') Services
+      .input
+        input(type="search" value="Search...")
+    
+    .footer#footer
+      #copyright
+        p  © Collective Code INC. 2020 Design By Kushaal Reddy and Gordon Texghn  
+      #social-media
+        a(href="https://www.linkedin.com" target="_blank")
+          img#linkedin-logo(src="images/linkedin-icon.png")
+        a(href="https://www.youtube.com" target="_blank")
+          img#linkedin-logo(src="images/youtube-icon.png")
+        a(href="https://www.facebook.com" target="_blank")
+            img#linkedin-logo(src="images/fb-icon.png")
+  
+block content
+ 

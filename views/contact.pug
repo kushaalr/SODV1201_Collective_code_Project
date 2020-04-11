@@ -1,0 +1,66 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Contact Us
+  link(rel='stylesheet' type='text/css' href='stylesheets/style.css')
+#nav-header
+  #div-logo
+    img#collective-logo(src='images/logo2.png' alt='logo' width='425px' height='150px')
+    ul#nav-content
+      li
+        a(href='about.html') About Us 
+      li
+        a.active(href='contact.html') Contact |
+      li
+        a(href='Services.html') Services |
+      li
+        a(href='index.html') Home |
+.contact
+  .right
+    p.context
+      | We welcome any question you have on our services, and looking forward for you to be one of our many valuable customers.
+    form(action='')
+      fieldset
+        legend Contact Us
+        label(for='name') Name
+        input#name(type='text' name='name')
+        br
+        br
+        label(for='email') Email
+        input#email(type='email' name='email')
+        br
+        br
+        label(for='subject') Subject
+        input#subject(type='text' name='subject')
+        br
+        br
+        label(for='text') Message
+        textarea.txtarea(rows='4' cols='25' name='comment' form='usrform')
+          | Enter text here...
+        br
+        br
+        input.sub(type='submit' value='Submit')
+    br
+    .caddress
+      h4 Address
+      |           Location: 230 16 Street NW, Calgary, Alberta 
+      br
+      |           Phone: 845-556-8901 / 504-652-3154
+  .left
+    h3 Google Maps Loading...
+    #map
+footer#footer
+  #copyright
+    | &copy;Collective Code INC. | Kushaal Reddy | Gordon Texghn | 2020. 
+    #social-media
+      a(href='https://www.linkedin.com' target='_blank')
+        img#linkedin-logo(src='images/linkedin-icon.png' height='25px' width='25px')
+      a(href='https://www.youtube.com' target='_blank')
+        img#linkedin-logo(src='images/youtube-icon.png' height='25px' width='25px')
+      a(href='https://www.facebook.com' target='_blank')
+        img#linkedin-logo(src='images/fb-icon.png' height='25px' width='25px')
+  br
+  br
+script(src='javascripts/scripts.js')
+script(async='' defer='' src="https://maps.googleapis.com/maps/api/js?key='AIzaSyBHhIYYtxHDmz6M1xsFrAGqQBma1jfzOMc'callback=initMap")
